@@ -2,6 +2,15 @@
  
 <html>
 <head>
+ 
+ <script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="3QOElC3ShA1wbIKVSZQbOUiK6Lsb1z98";;analytics.SNIPPET_VERSION="4.15.3";
+  analytics.load("3QOElC3ShA1wbIKVSZQbOUiK6Lsb1z98");
+  analytics.page();
+  }}();
+</script>
+ 
+ 
 <title>Sneakerhead Signup<span id="selection-marker-1" class="redactor-selection-marker"></span></title>
 </head>
  
@@ -39,15 +48,22 @@ Email: <input name="email" required="" size="60" type="email"/>
      name: fullname
    };
 // // Identify call
-//     analytics.identify('12345', {
-//       email: email,
-//       name: fullname,
-//       shoeType: shoeType
-//     });
+ 
+ 
+ analytics.identify('12345', {
+   email: email,
+   name: fullname,
+   shoeType: shoeType
+                        });
 //  //  Sign-up Track call
-//     analytics.track('user signed up', user, function() {
-//       window.location.href = "";
-//     });
+ 
+ 
+   analytics.track('user signed up', user, function() {
+   window.location.href = "";
+                         });
+ 
+ 
+ 
 // // Ecommerce Events
    // analytics.track('Products Searched', {
    //  query: 'kith air force 1'
