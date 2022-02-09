@@ -81,7 +81,7 @@ Email: <input name="email" required="" size="60" type="email"/>
                          });
  
  
- // comerce Events 
+
 analytics.track('Products Searched', {
   query: 'kith air force 1'
   });
