@@ -165,7 +165,12 @@ list_id: 'hot_sneakers_2021',
          image_url: 'https:///www.example.com/product/path.jpg'
      }
       ]
-    });
+    }
+  function() {
+   window.location.href = "";
+                         }
+ 
+ );
  }
  
 </script>
