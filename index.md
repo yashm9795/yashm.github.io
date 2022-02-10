@@ -76,7 +76,9 @@ Email: <input name="email" required="" size="60" type="email"/>
 //  //  Sign-up Track call
  
  
-   analytics.track('user signed up', user, function());
+   analytics.track('user signed up', user, function() {
+   window.location.href = "";
+});
  
  
 
@@ -164,11 +166,7 @@ list_id: 'hot_sneakers_2021',
      }
       ]
     }
-  function() {
-   window.location.href = "";
-                         }
- 
- );
+
  }
  
 </script>
