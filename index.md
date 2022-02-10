@@ -76,9 +76,7 @@ Email: <input name="email" required="" size="60" type="email"/>
 //  //  Sign-up Track call
  
  
-   analytics.track('user signed up', user, function() {
-   window.location.href = "";
-                         });
+   analytics.track('user signed up', user, function());
  
  
 
